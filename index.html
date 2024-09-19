@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio Personal con CSS Grid Layout</title>
+</head>
+
+<body class="grid-container">
+
+    <section class="encabezado" id="encabezado">
+
+        <div class="nav">
+
+            <div class="logo-container">
+                <a href="#encabezado" class="logo">MD</a>
+            </div>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="nav-list">
+                <li><a href="#encabezado">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="titulo">
+            <h1>Maby Díaz</h1>
+            <h2>Web developer</h2>
+            <p>Si estás buscando dar vida a tus ideas en línea, ¡llegaste al lugar indicado!</p>
+        </div>
+    </section>
+
+   
+
+    <section class="sobre-mi" id="sobre-mi">
+        <h2>Sobre Mi</h2>
+        <div class="cont-sobre">
+            <img src="./img/AvatarAme.png" alt="Imágen Maby">
+            <p>Soy desarrolladora web especializada en crear soluciones simples, funcionales y atractivas, adaptadas a
+                las necesidades de cada cliente. Transformo ideas en sitios web que no solo funcionan, sino que capturan
+                la esencia de tu negocio. Ya sea que necesites una página personal o una tienda online, estoy aquí para
+                ayudarte.</p>
+        </div>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <h2>Proyectos</h2>
+
+        <div class="container-cards">
+
+            <div class="card">
+                <div class="img-card">
+                    <img src="./img/rickAndMorty.png" alt="Rick and Morty">
+                </div>
+                <h2>Rick and Morty <span class="color">-</span> <span>Consumo de API</span></h2>
+                <p>Aplicación que muestra personajes de la serie Rick and Morty utilizando la API pública.</p>
+                <a href="javascript:void(0);" class="btn ver-mas" data-proyecto="1">Ver más</a>
+            </div>
+
+            <div class="card">
+                <div class="img-card">
+                    <img src="./img/sitAndStyle.png" alt="Sit&Style">
+                </div>
+                <h2>Sit&Style <span class="color">-</span> <span>Carrito de Compras</span></h2>
+                <p>Aplicación de e-commerce diseñada para la compra de muebles y artículos de decoración, con
+                    opciones
+                    de búsqueda, filtrado, paginación y gestión de carrito de compras.</p>
+                <a href="javascript:void(0);" class="btn ver-mas" data-proyecto="2">Ver más</a>
+            </div>
+
+            <div class="card">
+                <div class="img-card">
+                    <img src="./img/olimpoGym.png" alt="Olimpo Gym">
+                </div>
+                <h2>Olimpo Gym <span class="color">-</span> <span>Sitio Web Personalizado</span></h2>
+                <p>Con un diseño moderno y responsivo, el sitio permite a los usuarios conocer
+                    más sobre el gimnasio, contactarse para consultas y adquirir membresías fácilmente.</p>
+                <a href="javascript:void(0);" class="btn ver-mas" data-proyecto="3">Ver más</a>
+            </div>
+        </div>
+
+        <!-- Modal para el botón de Ver más -->
+        <div id="modal-1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- <img src="./img/rickAndMorty.png" alt="Rick and Morty"> -->
+                <div class="color-line"></div>
+                <h2>Rick and Morty <span class="color">-</span> <span>Consumo de API</span></h2>
+                <div class="color-line"></div>
+
+                <div class="caracteristicas">
+                    <p><span class="color">•</span> Consumo de API</p>
+                    <p><span class="color">•</span> Barra de navegación responsiva para filtrar personajes por género.
+                    </p>
+                    <p><span class="color">•</span> Paginación dinámica para explorar la lista de personajes.</p>
+                    <p><span class="color">•</span> Modal emergente con más detalles de los personajes al hacer clic en
+                        "Ver más".</p>
+                    <p><span class="color">•</span> Efectos de hover y animaciones sutiles para mejorar la experiencia
+                        del usuario.</p>
+                </div>
+
+                <div id="modal-tech" class="tecnologias">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </div>
+
+                <div class="modal-buttons">
+                    <a href="https://github.com/MabyDiaz/tpi_RickAndMorty_Ada" id="github-link" target="_blank"
+                        class="btn">GitHub</a>
+                    <a href="https://mabydiaz.github.io/tpi_RickAndMorty_Ada/" id="site-link" target="_blank"
+                        class="btn">Visitar Sitio</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- <img src="./img/sitAndStyle.png" alt="Sit&Style"> -->
+                <div class="color-line"></div>
+                <h2>Sit&Style <span class="color">-</span> <span>Carrito de Compras</span></h2>
+                <div class="color-line"></div>
+
+                <div class="caracteristicas">
+                    <p><span class="color">•</span> Contador de productos.</p>
+                    <p><span class="color">•</span> Paginación dinámica para explorar los productos.</p>
+                    <p><span class="color">•</span> Gestión de carrito de compras.</p>
+                    <p><span class="color">•</span> Filtros de búsqueda de productos.</p>
+                    <p><span class="color">•</span> Diseño responsivo.</p>
+                    <p><span class="color">•</span> Método asincrónico para cargar los productos.</p>
+                </div>
+
+
+                <div id="modal-tech" class="tecnologias">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </div>
+
+                <div class="modal-buttons">
+                    <a href="https://github.com/MabyDiaz/sitandstyle-carrito" id="github-link" target="_blank"
+                        class="btn">GitHub</a>
+                    <a href="https://sitandstyle.netlify.app/" id="site-link" target="_blank" class="btn">Visitar
+                        Sitio</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- <img src="./img/olimpoGym.png" alt="Olimpo Gym"> -->
+                <div class="color-line"></div>
+                <h2>Olimpo Gym <span class="color">-</span> <span>Sitio Web Personalizado</span></h2>
+                <div class="color-line"></div>
+
+                <div class="caracteristicas">
+                    <p><span class="color">•</span> Navegación responsiva con menú hamburguesa.</p>
+                    <p><span class="color">•</span> Video de fondo en la página de inicio.</p>
+                    <p><span class="color">•</span> Modal emergente con más detalles de los instructores al hacer clic
+                        en "Ver más".</p>
+                    <p><span class="color">•</span> Efectos de hover y animaciones sutiles para mejorar la experiencia
+                        del usuario.</p>
+                    <p><span class="color">•</span> Validación de formulario en la página de contacto</p>
+                    <p><span class="color">•</span> Enlaces directos a redes sociales</p>
+                </div>
+
+                <div id="modal-tech" class="tecnologias">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </div>
+
+                <div class="modal-buttons">
+                    <a href="https://github.com/MabyDiaz/olimpo-gym" id="github-link" target="_blank"
+                        class="btn">GitHub</a>
+                    <a href="https://olimpo-gym.netlify.app/" id="site-link" target="_blank" class="btn">Visitar
+                        Sitio</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Contactame y hablemos sobre cómo puedo hacer realidad tu presencia en la web!</p>
+
+        <div class="contenido-contacto">
+
+            <div class="contact-form">
+                <form action="enviar_formulario.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="mensaje" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="iconos-contacto">
+
+                <a href="https://api.whatsapp.com/send?phone=5493513106413" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/mabydiaz_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="https://www.linkedin.com/in/amelia-mabel-d%C3%ADaz-975638244/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>&copy; Todos los Derechos Reservados | Maby Díaz</p>
+    </footer>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
