@@ -57,10 +57,22 @@ body {
 
 /* Logo MD */
 .encabezado .nav .logo-container {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #12fbf7;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #12fbf7;
   display: flex;
+  justify-content: center;
   align-items: center;
   width: auto;
-  margin: 0;
+  margin-left: 30px;
+  padding: 10px;
+  transition: box-shadow 1s ease;
+}
+
+.encabezado .nav .logo-container:hover {
+  box-shadow: 0px 0px 20px #12fbf7, 0px 0px 25px #12fbf7;
 }
 
 .encabezado .nav .logo-container .logo {
@@ -68,7 +80,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #12fbf7;
-  margin-left: 30px;
 }
 
 .encabezado .nav .nav-list {
@@ -253,7 +264,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  align-items: stretch;
+  align-items: center;
   justify-items: center;
   gap: 25px;
   padding: 20px;
@@ -313,7 +324,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: all 2s ease;
+  transition: all 0.8s ease;
 }
 
 .container-cards .card a:hover {
@@ -327,12 +338,14 @@ body {
 /* Sección contacto */
 .contacto {
   grid-area: contacto;
-  padding: 55px 50px 10px 50px;
+  height: 120vh;
+  margin-top: 100px;
+  padding: 0px 30px 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px; 
+  gap: 15px;
 }
 
 .contacto h2 {
@@ -391,27 +404,24 @@ body {
 }
 
 .contacto .contenido-contacto .contact-form .form-group button {
+  text-transform: uppercase;
   background-color: #12fbf7;
   color: #000000;
-  /* text-shadow: 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff,
-    -2px -2px 0 #fff; */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  transition: all 2s ease;
+  transition: all 0.8s ease;
 }
 
 .contacto .contenido-contacto .contact-form .form-group button:hover {
   background-color: transparent;
   color: #12fbf7;
-  /* text-shadow: 2px 2px 0 #12fbf7, -2px 2px 0 #12fbf7, 2px -2px 0 #12fbf7,
-    -2px -2px 0 #12fbf7; */
   border: 2px solid #12fbf7;
 }
 
-/* Estilos para los iconos (en móviles) */
+/* Estilos para los iconos */
 .contacto .contenido-contacto .iconos-contacto {
   width: 100%;
   display: flex;
@@ -657,6 +667,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 20px;
+    align-items: stretch;
   }
 
   .contacto {
