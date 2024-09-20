@@ -487,10 +487,10 @@ body {
 
 .modal-content {
   background-color: #050a1b;
-  margin: 30% auto; /* Centrado vertical y horizontal */
+  margin: 25% auto; /* Centrado vertical y horizontal */
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
+  width: 85%;
   max-width: 700px;
   border: 3px solid #12fbf7;
   position: relative;
@@ -539,7 +539,7 @@ body {
   flex-direction: column-reverse;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .modal-body img {
@@ -565,7 +565,7 @@ body {
 .tecnologias {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .tecnologias i {
@@ -579,7 +579,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .modal-buttons .btn {
@@ -587,7 +587,7 @@ body {
   color: #000;
   text-shadow: 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff,
     -2px -2px 0 #fff;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
