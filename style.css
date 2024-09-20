@@ -667,8 +667,8 @@ body {
 
   .proyectos .container-cards {
     height: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     align-items: stretch;
   }
@@ -729,6 +729,7 @@ body {
 
   .proyectos .container-cards {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
   }
 
   .contacto .contenido-contacto .contact-form {
