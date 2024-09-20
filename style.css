@@ -206,6 +206,7 @@ body {
 .sobre-mi {
   grid-area: sobre-mi;
   width: 100%;
+  height: 100%;
   padding: 105px 40px;
   display: flex;
   flex-direction: column;
@@ -343,7 +344,8 @@ body {
 /* Sección contacto */
 .contacto {
   grid-area: contacto;
-  margin-top: 130px;
+  height: 100%;
+  margin-top: 80px;
   padding: 50px 40px 10px 40px;
   display: flex;
   flex-direction: column;
