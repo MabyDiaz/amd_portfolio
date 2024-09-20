@@ -678,7 +678,8 @@ body {
   }
 
   .contacto {
-    /* margin-top: 10px; */
+    margin-top: 20px;
+    padding: 40px 20px;
     height: 100vh;
   }
 
