@@ -494,8 +494,8 @@ body {
   margin: 10% auto; /* Centrado vertical y horizontal */
   padding: 20px;
   border-radius: 10px;
-  width: 90%;
-  max-width: 700px; /* Ancho máximo del modal */
+  width: 80%;
+  max-width: 700px;
   border: 3px solid #12fbf7;
   text-align: center;
   position: relative;
@@ -558,7 +558,7 @@ body {
 
 /* Íconos de tecnologías usadas */
 .tecnologias {
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 .tecnologias i {
@@ -709,6 +709,10 @@ body {
 
   .modal-content {
     width: 50%;
+  }
+
+  .tecnologias {
+    margin: 20px 0;
   }
 }
 
