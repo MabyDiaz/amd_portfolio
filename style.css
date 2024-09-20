@@ -530,6 +530,7 @@ body {
 }
 
 .modal-content h2 span {
+  font-size: 15px;
   text-transform: capitalize;
 }
 
