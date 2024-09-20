@@ -244,11 +244,16 @@ body {
 }
 
 .sobre-mi .cont-sobre .parrafo {
+  font-size: 0.8rem;
   width: 100%;
   text-align: justify;
   letter-spacing: 1.1px;
-  /* padding: 0px 30px; */
   text-indent: 30px;
+  padding: 20px;
+  border: 2px solid #12fbf7;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #12fbf7;
+  background-color: #000;
 }
 
 /* Sección Proyectos */
@@ -658,6 +663,7 @@ body {
 
   .sobre-mi .cont-sobre .parrafo {
     width: 50%;
+    font-size: 1rem;
   }
 
   .proyectos {
