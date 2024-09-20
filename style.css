@@ -346,7 +346,7 @@ body {
 /* Sección contacto */
 .contacto {
   grid-area: contacto;
-  padding: 50px 20px;
+  padding: 105px 20px 50px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
