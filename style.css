@@ -482,13 +482,13 @@ body {
 
 .modal-content {
   background-color: #050a1b;
-  margin: 10% auto; /* Centrado vertical y horizontal */
+  margin: 40% auto; /* Centrado vertical y horizontal */
   padding: 20px;
   border-radius: 10px;
   width: 80%;
   max-width: 700px;
   border: 3px solid #12fbf7;
-  text-align: center;
+  /* text-align: center; */
   position: relative;
 }
 
